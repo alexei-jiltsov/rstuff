@@ -1,3 +1,5 @@
+library(mobster)
+
 
 stratified <- function() {
 	file='/Users/tomappleton/Downloads/20120928_SPY.csv'
@@ -108,68 +110,3 @@ analyse.volume.time <- function() {
 	
 
 }
-
-groupSum <- function(start, nums, target) { 
-	if(start==length(nums)) {return (target == 0)}
-	if(groupSum(start+1, nums, target-nums[start])) { return (TRUE)}
-  
-  	if(groupSum(start+1, nums, target)) { return (TRUE) }
-  
-  return (FALSE);
-}
-
-	  if(start>=nums.length) return (target==0);
-	  
-	  int count = 0 ;
-	  while(start+count < nums.length && nums[start]==nums[start+1]) {
-	  
-	    count++;
-	    start++;
-	
-	  }
-	  
-	  if(count>0) { 
-	   
-	    if(groupSumClump(start+count, nums, target-count*nums[start])) {return true ;} 
-	    
-	    if(groupSumClump(start+count, nums, target)) return true;
-	    
-	    return false;
-	    
-	  }
-	
-	
-	  if(groupSumClump(start+1, nums, target)) return true;
-	  
-	  if(groupSumClump(start+1, nums, target-nums[start])) return true; 
-	  
-	  return false;  
-
-
-
-
-public boolean splitArray(int[] nums) {
-  if(nums[0]==nums[1] && nums.length==2) return true;
-  
-  int[] next = Arrays.copyOfRange(nums, 1, nums.length);
-
-  if(nums.length>2) {
-    if(groupSum(nums[0], next, nums[0]) return true; 
-  }
-  
-  if(splitArray(
-  
-  return false;
-
-}
-
-public boolean groupSum(int start, int[] nums, int target) {
-  if(start==nums.length) return (target==0);
-
-  if(groupSum(start+1, nums, target)) return true;
-  
-  if(groupSum(start+1, nums, target-nums[start])) return true;
-  
-  return false;
-}
-	

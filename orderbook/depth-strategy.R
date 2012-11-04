@@ -1,4 +1,4 @@
-
+library(mobster)
 
 # plot(get.hob(10000)$ask0, type='s')
 # length(which(e$trader=="open"))

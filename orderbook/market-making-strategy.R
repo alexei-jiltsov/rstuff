@@ -1,3 +1,6 @@
+library(mobster)
+
+
 # num = 1000
 # ylim <- c(min(get.hob(num)$bid0), max(get.hob(num)$ask0))
 # plot(get.hob(num)$ask0, type='s', col='red', ylim=ylim)

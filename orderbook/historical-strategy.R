@@ -1,3 +1,5 @@
+library(mobster)
+
 #' Simple market making strategy.
 #' Whenever the spread is wider than a target spread this strategy provides liquidity.
 #' This strategy attempts to keep risk (the position size) close to zero. 
